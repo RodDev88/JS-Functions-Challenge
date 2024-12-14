@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ele1">hello</div>
+    <script>
+      function pintar(color = "green") {
+        // Modificamos el estilo del elemento directamente
+        ele.style.backgroundColor = color;
+      }
+
+      // Seleccionamos el elemento solo una vez y pasamos el elemento clickeado a la función
+      ele = document.getElementById("ele1");
+      ele.addEventListener("click", function () {
+        pintar("yellow"); // Llamamos a pintar pasando el elemento
+      });
+
+      pintar();
+    </script>
+  </body>
+</html>
